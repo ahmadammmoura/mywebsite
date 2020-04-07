@@ -80,7 +80,8 @@ img{
 }
 
 .section-heading h6{
-    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    font-size:3rem;
     font-weight: 300;
 }
 .has-margin-right{
