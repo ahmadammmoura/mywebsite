@@ -198,6 +198,18 @@ li{
     -webkit-text-fill-color: transparent;
     padding: 1rem;
     user-select: none;
+    transition: 1s;
+
+}
+.landing-text h1:hover{
+    
+    font-size: 22rem;
+    font-family: 'The Historia Demo';
+    background: top radial-gradient( #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+    user-select: none;
 
 }
 .landing-text h6{
@@ -205,6 +217,55 @@ li{
     font-weight: 300;
 }
 /*end header*/
+
+.spinner-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #151515;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.spinner::before,
+.spinner:after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.spinner:before {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(90deg, #ff00cc 0%,#333399 100% );
+    animation: spin .5s infinite linear;
+}
+.spinner:after {
+    width: 90%;
+    height: 90%;
+    background-color: #151515;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+
+}
 
 
 /*start about*/
@@ -214,10 +275,11 @@ li{
     justify-content: center;
 }
 .about-heading{
+    margin-top: 50px;
     text-align: center;
     text-transform: uppercase;
     line-height: 0;
-    margin-bottom: 6rem;
+    margin-bottom: 13rem;
 }
 .about-heading h1{
     font-size: 10rem;
@@ -268,24 +330,29 @@ li{
     justify-content: center;
     align-items: center;
     padding: 2rem;
+
 }
 .skill h1 {
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 2rem -2px 2rem 0;
+    margin: 3rem -2px 2rem 0;
+    font-family: cursive;
 }
 .icon-container{
-    width: 10rem;
-    height: 10rem;
-    border: 3px solid #ffe838;
-    background-color: #fd57bf;
+    animation: pulse 3s infinite;
+
+    width: 15rem;
+    height: 15rem;
+    border: 3px solid firebrick;
+    background-color: whitesmoke;
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
 }
 .icon-container i {
-    color: #ffe838;
-    font-size: 5rem;
+    color: #000000;
+    font-size: 10rem;
     margin: auto;
     transform: rotate(-45deg);
 
@@ -473,7 +540,7 @@ input[type="submit"]:hover{
 
 @keyframes pulse{
     0%{
-        box-shadow: 0 0 0 0 rgba(253,87,191,0.99);
+        box-shadow: 0 0 0 0 rgba(155, 92, 132, 0.99);
     }
     70%{
         box-shadow: 0 0 0 2rem rgba(253,87,191,0);
