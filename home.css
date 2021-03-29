@@ -121,7 +121,7 @@ li{
     margin: 0 2rem;
 }
 .nav-link{
-    font-family:'The Historia Demo', Times, serif;
+    font-family: 'Herr Von Muellerhoff', cursive;
     font-size: 5rem;
     padding: 1rem;
 }
@@ -192,7 +192,7 @@ li{
 }
 .landing-text h1{
     font-size: 20rem;
-    font-family: 'The Historia Demo';
+    font-family: 'Herr Von Muellerhoff', cursive;
     background: top radial-gradient( #ffe838, #fd57bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -204,7 +204,7 @@ li{
 .landing-text h1:hover{
     
     font-size: 22rem;
-    font-family: 'The Historia Demo';
+    font-family: 'Herr Von Muellerhoff', cursive;
     background: top radial-gradient( #ffe838, #fd57bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
